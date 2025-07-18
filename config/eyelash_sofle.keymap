@@ -35,6 +35,22 @@
         tap-ms = <100>;
     };
 
+    td0: td0 {
+        compatible = "zmk,behavior-tap-dance";
+        label = "TD0";
+        #binding-cells = <0>;
+        bindings = <&kp CAPSLOCK>, <&kp LEFT_SHIFT>;
+    };
+
+    ht0: ht0 {
+        compatible = "zmk,behavior-hold-tap";
+        label = "HT0";
+        bindings = <&kp>, <&kp>;
+
+        #binding-cells = <2>;
+        tapping-term-ms = <150>;
+    };
+
     behaviors {
     };
 
@@ -56,11 +72,11 @@
 
         layer_1 {
             bindings = <
-&kp ESC         &kp GRAVE        &kp F2          &kp F3           &kp F4           &kp F5             &mmv MOVE_UP     &kp F6     &kp F7     &kp F8        &kp MINUS         &kp EQUAL          &kp DELETE
-&kp TAB         &none            &none           &none            &none            &none              &mmv MOVE_DOWN   &kp PG_UP  &kp END    &kp UP        &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &kp ENTER
-&kp CAPSLOCK    &none            &trans          &trans           &trans           &none              &mmv MOVE_LEFT   &kp PG_DN  &kp LEFT   &kp DOWN      &kp SEMICOLON     &kp SINGLE_QUOTE   &kp RIGHT_SHIFT
-&kp LEFT_SHIFT  &rgb_ug RGB_OFF  &rgb_ug RGB_ON  &rgb_ug RGB_EFF  &rgb_ug RGB_EFR  &rgb_ug RGB_SPI    &mmv MOVE_RIGHT  &none      &none      &kp COMMA     &kp PERIOD        &kp SLASH          &trans
-&kp C_MUTE      &kp LCTRL        &kp LEFT_ALT    &kp LEFT_GUI     &kp SPACE        &mo 2              &mkp LCLK        &mo 2      &kp SPACE  &kp LEFT_GUI  &kp RIGHT_ALT     &kp RCTRL
+&kp ESC                   &kp GRAVE         &kp F2          &kp F3           &kp F4           &kp F5             &mmv MOVE_UP     &kp F6     &kp F7     &kp F8        &kp MINUS         &kp EQUAL          &kp DELETE
+&kp TAB                   &none             &none           &none            &none            &none              &mmv MOVE_DOWN   &kp PG_UP  &kp END    &kp UP        &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &kp ENTER
+&ht0 LEFT_SHIFT CAPSLOCK  &none             &trans          &trans           &trans           &none              &mmv MOVE_LEFT   &kp PG_DN  &kp LEFT   &kp DOWN      &kp SEMICOLON     &kp SINGLE_QUOTE   &kp RIGHT_SHIFT
+&none                     &rgb_ug RGB_OFF   &rgb_ug RGB_ON  &rgb_ug RGB_EFF  &rgb_ug RGB_EFR  &rgb_ug RGB_SPI    &mmv MOVE_RIGHT  &none      &none      &kp COMMA     &kp PERIOD        &kp SLASH          &none
+&kp C_MUTE                &kp LEFT_CONTROL  &kp LEFT_ALT    &kp LEFT_GUI     &kp SPACE        &mo 2              &mkp LCLK        &mo 2      &kp SPACE  &kp LEFT_GUI  &kp RIGHT_ALT     &kp RIGHT_CONTROL
             >;
 
             display-name = "layer1";
