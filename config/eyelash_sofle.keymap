@@ -43,11 +43,11 @@
 
         layer0 {
             bindings = <
-&kp ESC     &kp N1     &kp N2        &kp N3            &kp N4  &kp N5       &kp UP_ARROW     &kp N6     &kp N7  &kp N8         &kp N9         &kp N0          &kp BACKSPACE
-&kp TAB     &kp Q      &kp W         &kp E             &kp R   &kp T        &kp DOWN_ARROW   &kp Y      &kp U   &kp I          &kp O          &kp P           &kp ENTER
-&kp CAPS    &kp A      &kp S         &kp D             &kp F   &kp G        &kp LEFT_ARROW   &kp H      &kp J   &kp K          &kp L          &kp UP_ARROW    &kp RIGHT_SHIFT
-&kp LSHFT   &kp Z      &kp X         &kp C             &kp V   &kp B        &kp RIGHT_ARROW  &kp N      &kp M   &none          &kp LEFT       &kp DOWN_ARROW  &kp RIGHT_ARROW
-&kp C_MUTE  &kp LCTRL  &kp LEFT_ALT  &kp LA(LEFT_GUI)  &mo 1   &kp SPACE    &kp ENTER        &kp SPACE  &mo 1   &kp RIGHT_GUI  &kp RIGHT_ALT  &kp RCTRL
+&kp ESC     &kp N1     &kp N2        &kp N3            &kp N4     &kp N5    &kp UP_ARROW     &kp N6  &kp N7     &kp N8         &kp N9         &kp N0          &kp DEL
+&kp TAB     &kp Q      &kp W         &kp E             &kp R      &kp T     &kp DOWN_ARROW   &kp Y   &kp U      &kp I          &kp O          &kp P           &kp ENTER
+&kp CAPS    &kp A      &kp S         &kp D             &kp F      &kp G     &kp LEFT_ARROW   &kp H   &kp J      &kp K          &kp L          &kp UP_ARROW    &kp RIGHT_SHIFT
+&kp LSHFT   &kp Z      &kp X         &kp C             &kp V      &kp B     &kp RIGHT_ARROW  &kp N   &kp M      &none          &kp LEFT       &kp DOWN_ARROW  &kp RIGHT_ARROW
+&kp C_MUTE  &kp LCTRL  &kp LEFT_ALT  &kp LA(LEFT_GUI)  &kp SPACE  &mo 1     &kp ENTER        &mo 1   &kp SPACE  &kp RIGHT_GUI  &kp RIGHT_ALT  &kp RCTRL
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOLUME_UP C_VOL_DN>;
@@ -56,11 +56,11 @@
 
         layer_1 {
             bindings = <
-&kp ESC         &kp GRAVE        &kp F2          &kp F3           &kp F4           &kp F5             &mmv MOVE_UP     &kp F6     &kp F7    &kp F8        &kp MINUS         &kp EQUAL          &kp DELETE
-&kp TAB         &none            &mkp LCLK       &mkp MCLK        &mkp RCLK        &mkp MB4           &mmv MOVE_DOWN   &kp PG_UP  &kp END   &kp UP        &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &kp ENTER
-&kp CAPSLOCK    &kp TILDE        &trans          &trans           &trans           &mkp MB5           &mmv MOVE_LEFT   &kp PG_DN  &kp LEFT  &kp DOWN      &kp SEMICOLON     &kp SINGLE_QUOTE   &kp RIGHT_SHIFT
-&kp LEFT_SHIFT  &rgb_ug RGB_OFF  &rgb_ug RGB_ON  &rgb_ug RGB_EFF  &rgb_ug RGB_EFR  &rgb_ug RGB_SPI    &mmv MOVE_RIGHT  &none      &none     &kp COMMA     &kp PERIOD        &kp SLASH          &trans
-&kp C_MUTE      &kp LCTRL        &kp LEFT_ALT    &kp LEFT_GUI     &mo 2            &kp SPACE          &mkp LCLK        &kp SPACE  &mo 2     &kp LEFT_GUI  &kp RIGHT_ALT     &kp RCTRL
+&kp ESC         &kp GRAVE        &kp F2          &kp F3           &kp F4           &kp F5             &mmv MOVE_UP     &kp F6     &kp F7     &kp F8        &kp MINUS         &kp EQUAL          &kp DELETE
+&kp TAB         &none            &none           &none            &none            &none              &mmv MOVE_DOWN   &kp PG_UP  &kp END    &kp UP        &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &kp ENTER
+&kp CAPSLOCK    &none            &trans          &trans           &trans           &none              &mmv MOVE_LEFT   &kp PG_DN  &kp LEFT   &kp DOWN      &kp SEMICOLON     &kp SINGLE_QUOTE   &kp RIGHT_SHIFT
+&kp LEFT_SHIFT  &rgb_ug RGB_OFF  &rgb_ug RGB_ON  &rgb_ug RGB_EFF  &rgb_ug RGB_EFR  &rgb_ug RGB_SPI    &mmv MOVE_RIGHT  &none      &none      &kp COMMA     &kp PERIOD        &kp SLASH          &trans
+&kp C_MUTE      &kp LCTRL        &kp LEFT_ALT    &kp LEFT_GUI     &kp SPACE        &mo 2              &mkp LCLK        &mo 2      &kp SPACE  &kp LEFT_GUI  &kp RIGHT_ALT     &kp RCTRL
             >;
 
             display-name = "layer1";
