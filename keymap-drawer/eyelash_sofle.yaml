@@ -73,12 +73,12 @@ layers:
   - F3
   - F4
   - {t: '$$mdi:menu-up$$', s: '$$mdi:mouse$$'}
-  - F13
-  - F14
-  - F15
+  - F16
+  - F17
+  - F18
+  - F19
   - {t: '-', s: _}
   - {t: '=', s: +}
-  - {t: '$$mdi:backspace$$', type: backspace}
   - $$mdi:keyboard-tab$$
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - F5
