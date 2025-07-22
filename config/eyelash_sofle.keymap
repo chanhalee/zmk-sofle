@@ -72,7 +72,7 @@
 
         layer_1 {
             bindings = <
-&kp ESC         &kp GRAVE        &kp F1          &kp F2           &kp F3           &kp F4             &mmv MOVE_UP     &kp F16         &kp F17         &kp F18          &kp F19           &kp MINUS          &kp EQUAL
+&kp ESC         &kp GRAVE        &kp F1          &kp F2           &kp F3           &kp F4             &mmv MOVE_UP     &kp F16         &kp F17         &kp F18          &kp MINUS         &kp EQUAL          &kp BACKSPACE
 &kp TAB         &none            &kp F5          &kp F6           &kp F7           &kp F8             &mmv MOVE_DOWN   &none           &kp UP_ARROW    &none            &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &kp BACKSLASH
 &kp CAPSLOCK    &none            &kp F9          &kp F10          &kp F11          &kp F12            &mmv MOVE_LEFT   &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW  &kp SEMICOLON     &kp SINGLE_QUOTE   &kp ENTER
 &kp LEFT_SHIFT  &rgb_ug RGB_OFF  &rgb_ug RGB_ON  &rgb_ug RGB_EFF  &rgb_ug RGB_EFR  &rgb_ug RGB_SPI    &mmv MOVE_RIGHT  &none           &none           &kp COMMA        &kp PERIOD        &kp SLASH          &kp RIGHT_SHIFT
